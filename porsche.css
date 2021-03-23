@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 3vh;
+    background: #fff;
+}
+nav .logo {
+    position: absolute;
+    top: 0;
+    left: 8%;
+    z-index: 10000;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo img {
+    width: 120px;
+    height: 120px;
+}
+
+.navigetion {
+    display: flex;
+    margin-left: 352px;
+    padding: 25px 0px 0px 0px;
+}
+.p718 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0px 25px;
+}
+.p718:hover:after {
+   content: '';
+   border: 3px solid red;
+   width: 100%;
+   position: relative;
+   margin-top: 12px;
+}
+
+.shop {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 100%;
+    margin: auto;
+}
+.shop span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 30px;
+    margin-top: 55px;
+}
+.shop-item {
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    top: 13.3%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: none;
+}
+.shop-item h1 {
+    margin-top: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    width: 30%;
+    margin-left: 830px;
+}
+.shop-item a {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:10px 0px;
+}
+.shop-item a:nth-child(3){
+    padding-right: 45px;
+}
+.shop-item a:hover {
+    color: red;
+}
+
+
+.see {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-right: 25px;
+    height: 30px;
+    height: 100%;
+}
+.see::after {
+    content: '';
+    border: 1px solid black;
+    height: 900%;
+    display: flex;
+    margin-left: 30px;
+}
+.see span {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.see-item {
+    position: absolute;
+    top: 13.3%;
+    left: 0;
+    height: 50vh;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+    justify-content: center;
+    display: none;
+}
+.item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.see-item ul {
+    padding: 30px 80px;
+}
+.see-item ul h1 {
+    border-bottom: 1px solid black;
+}
+.see-item ul li {
+    padding: 10px 0px;
+}
+.see-item ul li a:hover {
+    color: red;
+}
+
+
+.find {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+
+.submenu,.submenu2,.submenu3,.submenu4,.submenu5,.submenu6 {
+    position: absolute;
+    top: 13.3%;  
+    left: 0;        
+    height: 50vh;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    z-index: 1000;
+    transition: .3s;
+}
+.submenu .car,.submenu2 .car,.submenu3 .car,.submenu4 .car,.submenu5 .car,.submenu6 .car {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px 0px;
+    display: flex;
+    width: 38%;
+    margin: auto;
+    justify-content: center;
+}
+.submenu .car a,.submenu2 .car a,.submenu3 .car a,.submenu4 .car a,.submenu5 .car a,.submenu6 .car a{
+    padding: 0px 15px;
+    transition: .3s;
+}
+.submenu .car a:hover,.submenu2 .car a:hover,.submenu3 .car a:hover,.submenu4 .car a:hover,.submenu5 .car a:hover,.submenu6 .car a:hover {
+    color: red;
+}
+.submenu .model,.submenu2 .model,.submenu3 .model,.submenu4 .model,.submenu5 .model,.submenu6 .model {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items: center;
+}
+.submenu .model img,.submenu2 .model img,.submenu3 .model img,.submenu4 .model img,.submenu5 .model img,.submenu6 .model img {
+    width: 350px;
+}
+.submenu .model span,.submenu2 .model span,.submenu3 .model span,.submenu4 .model span,.submenu5 .model span,.submenu6 .model span {
+    font-size: 1.4rem;
+    
+}
+.submenu .bottom-model,.submenu2 .bottom-model,.submenu3 .bottom-model,.submenu4 .bottom-model,.submenu5 .bottom-model,.submenu6 .bottom-model {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+}
+.submenu .bottom-model a,.submenu2 .bottom-model a,.submenu3 .bottom-model a,.submenu4 .bottom-model a,.submenu5 .bottom-model a,.submenu6 .bottom-model a{
+    padding: 0px 5px;
+    transition: .3s;
+}
+.submenu .bottom-model a:hover,.submenu2 .bottom-model a:hover,.submenu3 .bottom-model a:hover,.submenu4 .bottom-model a:hover,.submenu5 .bottom-model a:hover,.submenu6 .bottom-model a:hover {
+    color: red;
+}
+
+
+
+.slider {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 60vh;
+}
+.slide {
+    width: 100%;
+    height: 50vh;
+}
+.slide img {
+    width: 100%;
+    height: 600px;
+}
+.slide p {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+.slide span {
+    font-size: 1.6rem;
+    margin-left: 50px;
+}
+.slide p i {
+    font-size: 2.5rem;
+    color: red;
+    padding-right: 15px;
+}
+
+.dot {
+    position: absolute;
+    top: 70%;
+    left: 47%;
+}
+.dot-items {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-items.active {
+    background-color: #717171;
+}
+
+.buy {
+    position: relative;
+    width: 100%;
+    margin-top:  50px;
+}
+.buy .all-model {
+    width: 70%;
+    margin: auto;
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+}
+.buy .buy-car {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+.buy .buy-car .car-item {
+    position: relative;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnSCz1OI9Cab3dDZVz12EecogzpYM1rZq7xw&usqp=CAU) no-repeat;
+    background-size: 100%;
+    width: 500px;
+    height: 30vh;
+    background-size: cover;
+    width: 40%;
+    height: 500px;
+    color: #fff;
+}
+.buy .buy-car .car-item:nth-child(2) {
+    background: url(https://blog.kakaocdn.net/dn/cnXcsz/btqPyroUgBl/OdCMXPdKSt2JAKUv8O8041/img.jpg) no-repeat;
+    background-size: 118%;
+    background-position: center center;
+}
+.buy .buy-car .car-item:nth-child(3) {
+    background: url(https://blog.kakaocdn.net/dn/bNxgo5/btqUczAQzVO/ChFKdM39yRSpoAK4ct07VK/img.jpg);
+    background-size: 100%;
+    background-position: center center;
+}
+.buy .pt {
+    position: absolute;
+    top: 91%;
+}
+.buy .pt .car-item:nth-child(1) {
+    background: url(https://www.automobilesreview.com/img/porsche-panamera-turbo-s-executive-exclusive-series/porsche-panamera-turbo-s-executive-exclusive-series-02.jpg) no-repeat;
+    background-size: 118%;
+    background-position: center center;
+}
+.buy .pt .car-item:nth-child(2) {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsv0Rw_Sw-VEm8zmGbRyl8mG1iyngP8J9ow&usqp=CAU) no-repeat;
+    background-size: 142%;
+    background-position: center center;
+}
+.buy .pt .car-item:nth-child(3) {
+    background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/img-5822-1598562303.jpeg) no-repeat;
+    background-size: 105%;
+}
+.buy-car .car-item h1 {
+    padding: 20px 70px;
+}
+.buy-car .car-item span {
+    padding: 0px 70px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.buy-car .bottom {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+.buy-car .bottom a:nth-child(1) {
+    background-color: #fff;
+    padding: 17px;
+    transition: .2s;
+}
+.buy-car .bottom a:nth-child(1):hover {
+    background-color: red;
+    color: #fff;
+}
+.buy-car .bottom a:nth-child(2) {
+    margin-left: 15px;
+    border: 1px solid #fff;
+    padding: 17px;
+    color: #fff;
+    transition: .2s;
+}
+.buy-car .bottom a:nth-child(2) i {
+    margin-right: 10px;
+}
+.buy-car .bottom a:nth-child(2):hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.user-car {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 600px;
+    height: 60vh;
+}
+.user-car .swiper-container {
+      text-align: center;
+}
+.user-car .swiper-container .swiper-wrapper .swiper-slide a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.user-car .swiper-container .swiper-wrapper .swiper-slide span {
+    background-color: black;
+    padding: 20px 20px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+}
+.user-car .swiper-container .swiper-wrapper .swiper-slide span:hover {
+    background-color: red;
+    color: black;
+}
+.user-car .swiper-container .swiper-wrapper .swiper-slide a i {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+
+.shopping {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    height: 60vh;
+}
+.shopping h1 {
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem
+}
+.shopping .shopping-items {
+    display: flex;
+}
+.shopping .shopping-items .shoping-item {
+    width: 100%;
+}
+.shopping .shopping-items .shopping-item a {
+    position: relative;
+    display: flex;
+}
+.shopping .shopping-items .shopping-item .shimg1 {
+    width: 700px;
+    height: 300px;
+}
+.shopping .shopping-items .shopping-item .shimg2 {
+    width: 320px;
+    height: 300px;
+}
+.shopping .shopping-items .shopping-item .shimg3 {
+    width: 320px;
+    height: 300px;
+}
+.shopping .shopping-items .shopping-item .shimg4 {
+    width: 350px;
+    height: 300px;
+}
+.shopping .shopping-items .shopping-item span {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.shopping .shopping-items .shopping-item span i {
+    color: red;
+    padding-right: 10px;
+}
+.shopping .shopping-items .shopping-item:hover a span{
+    color: #d5001c;
+}
+
+.dicover {
+    width: 90%;
+    margin: auto;
+    height: 60vh;
+}
+.dicover h1 {
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+.dicover .dicover-items {
+    display: flex;
+}
+.dicover .dicover-items .discover-item a{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.dicover .dicover-items .discover-item a:hover:after{
+    content: '';
+    width: 100%;
+    border-bottom: 5px solid red;
+    position: absolute;
+    bottom: 10.5%;
+}
+.dicover .dicover-items .discover-item:hover span {
+    color: red;
+}
+.dicover .dicover-items .discover-item img {
+    width: 430px;
+    height: 300px;
+}
+.dicover .dicover-items .discover-item span{
+    padding-top: 15px;
+}
+.dicover .dicover-items .discover-item span i {
+    padding-right: 5px;
+    color: red;
+}
+
+
+section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    border-top: 1px solid black;
+    height: 45vh;
+}
+section .section-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section .section-items .build h1,section .section-items .online h1,section .section-items .behind h1,section .section-items .cpmpany h1{
+    padding: 25px 0px;
+}
+section .section-items .build ul li{
+    padding: 15px 0px;
+}
+section .section-items .build ul li a {
+    text-decoration: none;
+    color: black;
+}
+section .section-items .build ul li a:hover {
+    color: red;
+}
+
+section .section-items .online ul li{
+    padding: 15px 0px;
+}
+section .section-items .online ul li a {
+    text-decoration: none;
+    color: black;
+}
+section .section-items .online ul li a:hover {
+    color: red;
+}
+
+section .section-items .behind ul li{
+    padding: 15px 0px;
+}
+section .section-items .behind ul li a {
+    text-decoration: none;
+    color: black;
+}
+section .section-items .behind ul li a:hover {
+    color: red;
+}
+
+section .section-items .cpmpany ul li{
+    padding: 15px 0px;
+}
+section .section-items .cpmpany ul li a {
+    text-decoration: none;
+    color: black;
+}
+section .section-items .cpmpany ul li a:hover {
+    color: red;
+}
+
+section .section-items .sns {
+    margin: 30px 0px;
+    font-size: 2rem;
+}
+section .section-items .sns a {
+    background-color: black;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+}
+section .section-items .sns a:nth-child(1):hover {
+    background-color: pink;
+}
+section .section-items .sns a:nth-child(2):hover {
+    background-color: red;
+}
+section .section-items .sns a:nth-child(3):hover {
+    background-color: blue;
+}
+section .section-items .sns a:nth-child(4):hover {
+    background-color: rgb(88, 88, 143);
+}
+section .section-items .sns a:nth-child(5):hover {
+    background-color: skyblue;
+}
+section .section-items .sns a:nth-child(6):hover {
+    background-color: red;
+}
+section .section-items .sns a:nth-child(1) {
+    padding: 3px 12px;
+}
+section .section-items .sns a:nth-child(6) {
+    padding: 3px 12px;
+}
+
+
+footer {
+    background-color: #191f22;
+    height: 50vh;
+}
+footer .footer-items {
+    width: 70%;
+    margin: auto;
+    padding: 80px 0px;
+}
+footer .footer-items .data {
+    color: #fff;
+}
+footer .footer-items .data a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer .footer-items .data a:hover {
+    color: red;
+}
+
+footer .footer-items .tel {
+    color: #fff;
+    padding: 50px 0px;
+}
+
+footer .footer-items .care {
+    color: #fff;
+}
+
+
+
+@media (max-width: 900px) {
+    .slider {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .slide p {
+        position: absolute;
+        bottom: -40%;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .slide p span {
+        display: flex;
+    }
+    .dot {
+        position: absolute;
+        top: 98%;
+        left: 40%;
+    }
+    .buy {
+        width: 100%;
+        height: 100%;
+    }
+    .all-model{
+        padding-top: 100px;
+    }
+    .buy-car {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+
+}
